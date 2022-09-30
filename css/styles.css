@@ -12680,6 +12680,11 @@ header.masthead-2 .h1 {
   background-color: #3f52b7;
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-size: 18px;
+  align-items: center;
+  text-align: center;
 }
 
 #c3 {

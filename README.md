@@ -1,2 +1,1 @@
-# proyecto-secos-github
-Proyecto secos
+# Proyecto Secos

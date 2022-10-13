@@ -3271,10 +3271,13 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
+  font-family: 'Prompt';
   color: #fff;
   background-color: #F27961;
   border-color: #F27961;
-  border-radius: 10px;
+  border-radius: 30px;
+  width: 339.57px;
+  height: 64.89px;
 }
 
 .btn-primary:hover {
@@ -4496,7 +4499,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #f4623a;
+  color: #F27961;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -12447,11 +12450,10 @@ hr.divider-light {
   }
 }
 
-
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgb(0 0 0 / 50%) 0%, rgb(74 96 207) 100%), url(../assets/img/IMAGEN-HOME.jpg);
+  background: linear-gradient(to bottom, rgb(0 0 0 / 50%) 0%, rgb(74 96 207) 100%), url(../assets/img/IMAGEN-HOME.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12467,12 +12469,13 @@ header.masthead .h1 {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
-    padding-top: 4.5rem;
+    padding-top: 6.5rem;
     padding-bottom: 0;
   }
 
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 1.6rem;
+    text-align: left;
   }
 
   header.masthead h1,
@@ -12757,7 +12760,7 @@ header.masthead-2 .h1 {
   font-family: 'Prompt';
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 16px;
   line-height: 32px;
   display: flex;
   align-items: center;
@@ -12766,7 +12769,7 @@ header.masthead-2 .h1 {
 
 }
 .titulo-proyecto {
-  position: absolute;
+/*  position: absolute;*/
   width: 50rem;
   left: 15rem;
   top: 102rem;

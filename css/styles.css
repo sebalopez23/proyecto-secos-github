@@ -196,6 +196,7 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 30px;
 }
 
 abbr[title],
@@ -12273,7 +12274,8 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 2rem 0;
+  /* padding: 8rem 0; */
 }
 
 .text-white-75 {
@@ -12842,7 +12844,7 @@ player {
 .arrow_scroll {
   animation: fadeOutDown 1s linear infinite;
   width: 60px;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
   /* position: absolute; */
   /* bottom: 0; */
 }

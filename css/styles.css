@@ -8777,7 +8777,7 @@ fieldset:disabled .btn {
 .bg-primary {
   --bs-bg-opacity: 1;
   /*  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;*/
-  background-color: #4a60cf;
+  /* background-color: #4a60cf; */
 }
 .bg-primary-mobile {
   --bs-bg-opacity: 1;
@@ -12836,15 +12836,101 @@ player {
 
 /* New code */
 
+
+
+/* body {
+  background: url(/assets/img/texture.png);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+} */
+
+
+
+
+body {
+	background-image: url('/assets/img/FONDO\ WEB.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+
+
+
 .forma1 {
   position: relative;
-  margin-bottom: -56px;
+  margin-bottom: -52px;
 }
 
 .forma2 {
   position: relative;
-  margin-top: -56px;
+  margin-top: -55px;
 }
+
+
+ @media (min-width: 1151px) {
+  .forma1 {
+    position: relative;
+    margin-bottom: -87px;
+  } 
+
+  .forma2 {
+    position: relative;
+    margin-top: -89px;
+  }  
+
+
+  @media (min-width: 1895px) {
+    .forma1 {
+      position: relative;
+      margin-bottom: -90px;
+    } 
+  
+    .forma2 {
+      position: relative;
+      margin-top: -92px;
+    } 
+  
+  }
+
+/* 
+.forma1 {
+  position: relative;
+  top:48px;
+}
+
+.forma2 {
+  position: relative;
+  bottom: 51px;
+}
+
+
+@media (min-width: 1071px) {
+  .forma1 {
+    position: relative;
+    top: 58px;
+  }
+  
+  .forma2 {
+    position: relative;
+    bottom: 61px;
+  }
+}
+
+@media (min-width: 1578px) {
+  .forma1 {
+    position: relative;
+    top: 80px;
+  }
+  
+  .forma2 {
+    position: relative;
+    bottom: 83px;
+  }
+} */
+
+
+
 
 
 .arrow_scroll {
@@ -12907,6 +12993,21 @@ font-size: 1.1rem;
 }
 
 
+/* // sidebar-menu */
+/* Alinea textos a la izquierda  */
+.caja {
+  width: 50%;
+  margin: 0 auto;
+}
+ .caja :is(h5, p){
+  text-align: left;
+ }
+ 
+
+ .page-section {
+  margin: 0 auto;
+  padding: 0 auto;
+ }
 
 
 /* prompt-100 - latin */

@@ -302,7 +302,7 @@
 .side-content-button-box {
     position: relative;
     display: block;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 
 .side-content-button-box .side-content-button {

@@ -8779,6 +8779,12 @@ fieldset:disabled .btn {
   /*  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;*/
   /* background-color: #4a60cf; */
 }
+.bg-primary-mobile {
+  --bs-bg-opacity: 1;
+  /*  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;*/
+  background-color: #4a60cfc7;
+  border-top: 1px solid white;
+}
 
 .bg-secondary {
   --bs-bg-opacity: 1;
@@ -12305,7 +12311,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #4a60cf;
+  background-color: #4a60cf69;
   border-bottom: 1px solid white
 }
 
@@ -12678,10 +12684,10 @@ header.masthead-2 .h1 {
   position: relative;
   top: 0;
   z-index: 2;
-  width: 1.8vw;
-  height: 1.8vw;
-  min-height: 0.85vw;
-  min-width: 0.85vw;
+  width: 2.8vw;
+  height: 2.8vw;
+  min-height: 1.85rem;
+  min-width: 1.85rem;
   border: 2px solid #fff;
   border-radius: 100%;
   box-sizing: border-box;

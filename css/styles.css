@@ -12686,8 +12686,8 @@ header.masthead-2 .h1 {
   z-index: 2;
   width: 1.8vw;
   height: 1.8vw;
-  min-height: 0.85vw;
-  min-width: 0.85vw;
+  min-height: 4.85vw;
+  min-width: 4.85vw;
   border: 2px solid #fff;
   border-radius: 100%;
   box-sizing: border-box;

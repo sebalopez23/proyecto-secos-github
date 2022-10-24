@@ -284,8 +284,9 @@ a {
 }
 
 a:hover {
-  color: #c34e2e;
+  color: #fc8870 !important;
 }
+
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -12759,9 +12760,10 @@ header.masthead-2 .h1 {
 }
 
 .titulo-header-proyecto {
+  text-align: left !important;
   font-family: 'Prompt';
   font-style: normal;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   font-size: 100px;
   /* or 100% */
   letter-spacing: 0.03em;
@@ -12784,27 +12786,33 @@ header.masthead-2 .h1 {
 }
 .titulo-proyecto {
 /*  position: absolute;*/
-  width: 50rem;
-  left: 15rem;
-  top: 102rem;
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 60px;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
+    position: relative;
+    text-align: left;
+    width: 50rem;
+    left: 20px;
+    top: 30px;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 54px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .parrafos-proyecto {
   font-family: 'Prompt';
   font-size: 20px;
-  line-height: 30px;
+  line-height: 24px;
   align-items: center;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  text-align: left;
+}
+
+
+.titulo-fef {
   text-align: left;
 }
 
@@ -13011,10 +13019,10 @@ font-size: 1.1rem;
  }
 
 
-
 .menu-cap  {
   cursor:pointer;
  } 
+
 
 
 /* prompt-100 - latin */

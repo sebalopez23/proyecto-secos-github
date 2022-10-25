@@ -511,6 +511,9 @@
             </div>
         </div>
     </section>
+    <div class="p1-trigger-link-container wf-section">
+        <div id="linkPage" data-href="capitulo-2.html" class="trigger-link"></div>
+    </div>
 
     <footer class="footer-bg">
         <div class="container px-4 px-lg-5">
@@ -686,6 +689,44 @@
             }
           })
         }
+    </script>
+    <script>
+    (()=>{
+        const target = document.querySelector('#linkPage');
+        if(!target) return;
+        const progress = {val: 0}
+        const tl = gsap.to(progress, {
+          val: 1,
+          duration: 2,
+          paused: true,
+          onUpdate: ()=>{
+            if(window.soundController){
+              window.soundController.setVolume(1 - progress.val)
+            }
+          },
+          onComplete: () => {
+            location.href = target.dataset.href;
+            /*setTimeout(()=>{
+              if(window.locomotiveScroll){
+                window.locomotiveScroll.scrollTo(0)
+              } else{
+                window.scrollTo(0, 0)
+              }
+            }, 100)*/
+          }
+        });
+        const callback = function(entries, observer) {
+          entries.forEach(entry => {
+              if (entry.intersectionRatio > 0) {
+                tl.play()
+              } else {
+                tl.reverse();
+              }
+            });
+        };
+        const observer = new IntersectionObserver(callback);
+        observer.observe(target);
+    })()
     </script>
 </body>
 

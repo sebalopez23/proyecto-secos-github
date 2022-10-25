@@ -12280,9 +12280,15 @@ body {
 }
 
 .page-section {
+  padding: 4rem 0;
+  /* padding: 8rem 0; */
+}
+
+.little-page-section {
   padding: 2rem 0;
   /* padding: 8rem 0; */
 }
+
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
@@ -12839,10 +12845,7 @@ header.masthead-2 .h1 {
   background-color: #4a60cf;
   color: white;
 }
-player {
-  font-weight: 900;
-  transition: color 0.3s;
-}
+
 
 
 
@@ -13008,20 +13011,62 @@ font-size: 1.1rem;
   width: 50%;
   margin: 0 auto;
 }
+
  .caja :is(h5, p){
   text-align: left;
  }
  
-
  .page-section {
   margin: 0 auto;
   padding: 0 auto;
  }
 
-
-.menu-cap  {
+.menu-cap {
+  font-weight: 300 !important;
+  font-size: 34px;
   cursor:pointer;
  } 
+
+ .submenu-cap {
+  font-weight: 300 !important;
+  font-size: 18px;
+  cursor:pointer;
+  line-height: 30px;
+ } 
+
+ .wsp-text {
+ font-size: 20px;
+ }
+
+.min_map_title {
+  font-weight: 300 !important;
+  font-size: 55px ;
+  letter-spacing: 14px;
+  text-align: left;
+  } 
+ 
+.min_map_subtitle {
+   font-weight: 200 !important;
+   font-size: 40px ;
+   letter-spacing: 10px;
+   text-align: left;
+   } 
+
+.min-subt {
+      font-weight: 100 !important;
+      letter-spacing: 6px;
+      text-align: left;
+  } 
+
+
+ /* @media only screen and (max-width: 600px) {
+  .text-white-p {
+    font-size: 10px !important;
+  }
+} */
+
+
+
 
 
 /* prompt-100 - latin */

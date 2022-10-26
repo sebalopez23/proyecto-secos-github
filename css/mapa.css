@@ -1,5 +1,6 @@
 #mapa {
     height: 100vh;
+    width: 100%;
 }
 
 .coquimbo,
@@ -23,7 +24,6 @@
     fill: coral;
     cursor: pointer;
 }
-
 
 
 .fade-in-image {
@@ -98,10 +98,6 @@
     100% {
         opacity: 1;
     }
-}
-
-#mapa {
-    width: 100%;
 }
 
 

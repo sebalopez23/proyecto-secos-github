@@ -12887,42 +12887,80 @@ body {
 
  
 .forma1 {
-  background-image: url(img/);
   position: relative;
-  top:48px;
+  top:140px;
 }
 
 .forma2 {
   position: relative;
-  bottom: 51px;
+  bottom: 100px;
 }
 
-
-/* @media (min-width: 1071px) {
-  .forma1 {
-    position: relative;
-    top: 58px;
-  }
   
-  .forma2 {
-    position: relative;
-    bottom: 61px;
-  }
-}
+/* Queries formas olas */
 
-@media (min-width: 1578px) {
+@media (min-width: 1801px) {
   .forma1 {
-    position: relative;
+    top: 140px;
+  }
+  .forma2 {
+    bottom: 106px;
+  }
+} 
+
+@media (min-width: 1441px) and (max-width: 1800px){
+  .forma1 {
+    top: 110px;
+  }
+  .forma2 {
+    bottom: 80px;
+  }
+} 
+
+@media (min-width: 1201px) and (max-width: 1440px){
+  .forma1 {
+    top: 90px;
+  }
+  .forma2 {
+    bottom: 70px;
+  }
+}  
+
+@media (min-width: 1025px) and (max-width: 1200px){
+  .forma1 {
     top: 80px;
   }
-  
   .forma2 {
-    position: relative;
-    bottom: 83px;
+    bottom: 60px;
   }
-}  */
+}   
 
+@media (min-width: 768px) and (max-width: 1024px){
+  .forma1 {
+    top: 60px;
+  }
+  .forma2 {
+    bottom: 44px;
+  }
+}   
 
+@media (min-width: 481px) and (max-width: 767px){
+  .forma1 {
+    top: 50px;
+  }
+  .forma2 {
+    bottom: 30px;
+  }
+}   
+
+@media (min-width: 320px) and (max-width: 480px){
+  .forma1 {
+    top: 30px;
+  }
+  .forma2 {
+    bottom: 20px;
+  }
+}   
 
 
 
@@ -13156,7 +13194,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); */
 }
 .video-container .video-wrapper {
   width: 100%;

@@ -12841,21 +12841,7 @@ header.masthead-2 .h1 {
 
 
 
-
-
 /* New code */
-
-
-
-/* body {
-  background: url(/assets/img/texture.png);
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center;
-} */
-
-
-
 
 body {
 	background-image: url(../assets/img/FONDO-WEB.jpg);
@@ -12863,10 +12849,7 @@ body {
 	position: relative;
 }
 
-
-
-
-.forma1 {
+/* .forma1 {
   position: relative;
   margin-bottom: -52px;
 }
@@ -12900,7 +12883,7 @@ body {
       margin-top: -92px;
     } 
   
-  }
+  } */
 
 /* 
 .forma1 {
@@ -12964,8 +12947,6 @@ body {
 
 
 /* textos prompt  */
-
-
 .text-white-p, .texto-audio, .intro-home, .cuñas-home {
   letter-spacing: 0.1rem;
   line-height: 1.4rem;
@@ -13051,13 +13032,30 @@ font-size: 1.1rem;
       text-align: left;
   } 
 
-
- /* @media only screen and (max-width: 600px) {
-  .text-white-p {
-    font-size: 10px !important;
+  .chapter-container {
+    padding: 36px;
   }
-} */
 
+
+  @media screen and (max-width: 1150px) {
+    .min_map_title {
+      font-size: 26px !important;
+      letter-spacing: 10px !important;
+      } 
+     
+    .min_map_subtitle {
+       font-size: 16px !important;
+       letter-spacing: 6px !important;
+       } 
+  } 
+  
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+body {
+  width:100%;  margin: 0 auto; 
+     }
+} */
 
 
 

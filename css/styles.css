@@ -12716,8 +12716,6 @@ header.masthead-2 .h1 {
 
 /* Zona 1 Capítulo 1 */
 .zona-n {
-  position: absolute;
-  top: 10rem;
   font-family: 'Prompt';
   font-style: normal;
   font-weight: 300;
@@ -12730,8 +12728,6 @@ header.masthead-2 .h1 {
 }
 
 .zona-p {
-  position: absolute;
-  top: 12rem;
   font-family: 'Prompt';
   font-style: normal;
   font-weight: 300;

@@ -12885,8 +12885,9 @@ body {
   
   } */
 
-/* 
+ 
 .forma1 {
+  background-image: url(img/);
   position: relative;
   top:48px;
 }
@@ -12897,7 +12898,7 @@ body {
 }
 
 
-@media (min-width: 1071px) {
+/* @media (min-width: 1071px) {
   .forma1 {
     position: relative;
     top: 58px;
@@ -12919,7 +12920,7 @@ body {
     position: relative;
     bottom: 83px;
   }
-} */
+}  */
 
 
 
@@ -13190,7 +13191,7 @@ body {
 .play-button-wrapper #circle-play-b svg {
   width: 100px;
   height: 100px;
-  fill: #F27961;
+  /* fill: #F27961; */
   stroke: #F27961;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.2);

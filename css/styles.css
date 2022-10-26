@@ -12516,7 +12516,6 @@ header.masthead .h1 {
 header.masthead-2 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgb(74 96 207) 0%, rgb(74 96 207) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12842,8 +12841,6 @@ header.masthead-2 .h1 {
 }
 .section--large {
   width: 100vw;
-  background-color: #4a60cf;
-  color: white;
 }
 
 
@@ -12865,7 +12862,7 @@ header.masthead-2 .h1 {
 
 
 body {
-	background-image: url('/assets/img/FONDO\ WEB.jpg');
+	background-image: url(../assets/img/FONDO-WEB.jpg);
 	background-size: cover;
 	position: relative;
 }

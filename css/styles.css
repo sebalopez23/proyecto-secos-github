@@ -12749,7 +12749,7 @@ header.masthead-2 .h1 {
 /* problemáticas -titulos secciones capitulos*/
 .cap-sect-title {
   font-family: 'Prompt';
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 3.9rem !important;
   justify-content: left !important;
@@ -13060,6 +13060,36 @@ font-size: 1.1rem;
   }
 
 
+
+
+  .p-intro-title {
+    position: relative;
+    top: 22px;
+    left: 30px;
+    font-weight: 300 !important;
+  }
+
+  .podcast-title {
+    position: relative;
+    top: 56px;
+    left: 30px;
+  }
+
+  .p-title {
+    font-weight: 300 !important;
+    font-size: 40px;
+    letter-spacing: 8px;
+    line-height:18px !important;
+  }
+
+  .p-subtitle {
+    font-weight: 200 !important;
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+
+
+
   @media screen and (max-width: 1150px) {
     .min_map_title {
       font-size: 26px !important;
@@ -13072,15 +13102,6 @@ font-size: 1.1rem;
        } 
   } 
   
-
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
-body {
-  width:100%;  margin: 0 auto; 
-     }
-} */
-
-
 
 
 /* prompt-100 - latin */

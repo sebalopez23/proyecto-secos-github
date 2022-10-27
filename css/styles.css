@@ -7951,6 +7951,11 @@ fieldset:disabled .btn {
   height: 100% !important;
 }
 
+/* new */
+.h-90 {
+  height: 90% !important
+}
+
 .h-auto {
   height: auto !important;
 }
@@ -12717,10 +12722,10 @@ header.masthead-2 .h1 {
 /* Zona 1 Capítulo 1 */
 .zona-n {
   font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: 0.1em;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -12730,20 +12735,27 @@ header.masthead-2 .h1 {
 .zona-p {
   font-family: 'Prompt';
   font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 14px !important;
   line-height: 24px;
+  letter-spacing: 0.2em;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
-/* problemáticas */
-.problematicas {
+
+/* problemáticas -titulos secciones capitulos*/
+.cap-sect-title {
   font-family: 'Prompt';
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-size: 3.9rem !important;
+  justify-content: left !important;
+  font-weight: 300;
+  text-align: left;
+  line-height: 62px;
 }
 
 /* zona 2 zapallar */
@@ -12812,6 +12824,15 @@ header.masthead-2 .h1 {
   text-align: left;
 }
 
+li.spotify-icon {
+  transition: transform .2s; /* Animation */
+}
+
+li.spotify-icon:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
 
 .titulo-fef {
   text-align: left;
@@ -12849,43 +12870,7 @@ body {
 	position: relative;
 }
 
-/* .forma1 {
-  position: relative;
-  margin-bottom: -52px;
-}
 
-.forma2 {
-  position: relative;
-  margin-top: -55px;
-}
-
-
- @media (min-width: 1151px) {
-  .forma1 {
-    position: relative;
-    margin-bottom: -87px;
-  } 
-
-  .forma2 {
-    position: relative;
-    margin-top: -89px;
-  }  
-
-
-  @media (min-width: 1895px) {
-    .forma1 {
-      position: relative;
-      margin-bottom: -90px;
-    } 
-  
-    .forma2 {
-      position: relative;
-      margin-top: -92px;
-    } 
-  
-  } */
-
- 
 .forma1 {
   position: relative;
   top:140px;
@@ -12898,7 +12883,6 @@ body {
 
   
 /* Queries formas olas */
-
 @media (min-width: 1801px) {
   .forma1 {
     top: 140px;

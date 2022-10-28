@@ -12753,7 +12753,7 @@ header.masthead-2 .h1 {
 /* problemáticas -titulos secciones capitulos*/
 .cap-sect-title {
   font-family: 'Prompt';
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 3.9rem !important;
   justify-content: left !important;
@@ -13046,15 +13046,27 @@ font-size: 1.1rem;
   text-align: left;
   } 
  
-.min_map_subtitle {
+.min_map_subtitle{
    font-weight: 200 !important;
-   font-size: 40px ;
+   font-size: 38px ;
    letter-spacing: 10px;
    text-align: left;
+   color: white;
+   transition:all 0.5s;
    } 
+   .min_map_subtitle:hover {
+    color: coral;
+    transition:all 0.5s;
+  }
+
+   .map-link {
+    text-decoration: none;
+   }
+
+
 
 .min-subt {
-      font-weight: 100 !important;
+      font-weight: 200;
       letter-spacing: 6px;
       text-align: left;
   } 
@@ -13062,6 +13074,36 @@ font-size: 1.1rem;
   .chapter-container {
     padding: 36px;
   }
+
+
+
+
+  .p-intro-title {
+    position: relative;
+    top: 22px;
+    left: 30px;
+    font-weight: 300 !important;
+  }
+
+  .podcast-title {
+    position: relative;
+    top: 56px;
+    left: 30px;
+  }
+
+  .p-title {
+    font-weight: 300 !important;
+    font-size: 40px;
+    letter-spacing: 8px;
+    line-height:18px !important;
+  }
+
+  .p-subtitle {
+    font-weight: 200 !important;
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+
 
 
   @media screen and (max-width: 1150px) {
@@ -13076,15 +13118,6 @@ font-size: 1.1rem;
        } 
   } 
   
-
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
-body {
-  width:100%;  margin: 0 auto; 
-     }
-} */
-
-
 
 
 /* prompt-100 - latin */

@@ -17,7 +17,6 @@
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="css/carousel.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
@@ -130,6 +129,134 @@
       padding: 0;
       text-align: center;
     }
+
+
+
+            #audio-player-container {
+                position: relative;
+                margin: 1px 2.5% auto 2.5%;
+                width: 100%;
+                background: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                --seek-before-width: 0%;
+                --volume-before-width: 100%;
+                --buffered-width: 0%;
+                letter-spacing: -0.5px;
+            }
+            .time {
+                display: inline-block;
+                width: 50px;
+                text-align: center;
+                font-size: 20px;
+                margin: 55.5px 0 18.5px 0;
+                float: left;
+                background-color: rgb(242 121 97 / 60%);
+                border-radius: 30%;
+            }
+            output {
+                display: inline-block;
+                width: 32px;
+                text-align: center;
+                font-size: 20px;
+                margin: 10px 2.5% 0 5%;
+                float: left;
+                clear: left;
+            }
+            input[type="range"] {
+                position: relative;
+                -webkit-appearance: none;
+                width: 70%;
+                margin: 0;
+                padding: 0;
+                height: 2px;
+                margin: 30px 2.5% 20px 2.5%;
+                float: left;
+                outline: none;
+            }
+            input[type="range"]::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 3px;
+                cursor: pointer;
+                background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+            }
+            input[type="range"]::before {
+                position: absolute;
+                content: "";
+                top: 8px;
+                left: 0;
+                width: var(--seek-before-width);
+                height: 3px;
+                background-color: #F27961;
+                cursor: pointer;
+            }
+            input[type="range"]::-webkit-slider-thumb {
+                position: relative;
+                -webkit-appearance: none;
+                box-sizing: content-box;
+                border: 1px solid #F27961;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background-color: #fff;
+                cursor: pointer;
+                margin: -7px 0 0 0;
+            }
+            input[type="range"]:active::-webkit-slider-thumb {
+                transform: scale(1.2);
+                background: #F27961;
+            }
+            input[type="range"]::-moz-range-track {
+                width: 100%;
+                height: 3px;
+                cursor: pointer;
+                background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+            }
+            input[type="range"]::-moz-range-progress {
+                background-color: #F27961;
+            }
+            input[type="range"]::-moz-focus-outer {
+                border: 0;
+            }
+            input[type="range"]::-moz-range-thumb {
+                box-sizing: content-box;
+                border: 1px solid #F27961;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background-color: #fff;
+                cursor: pointer;
+            }
+            input[type="range"]:active::-moz-range-thumb {
+                transform: scale(1.2);
+                background: #F27961;
+            }
+            input[type="range"]::-ms-track {
+                width: 100%;
+                height: 3px;
+                cursor: pointer;
+                background: transparent;
+                border: solid transparent;
+                color: transparent;
+            }
+            input[type="range"]::-ms-fill-lower {
+                background-color: #F27961;
+            }
+            input[type="range"]::-ms-fill-upper {
+                background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+            }
+            input[type="range"]::-ms-thumb {
+                box-sizing: content-box;
+                border: 1px solid #F27961;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background-color: #fff;
+                cursor: pointer;
+            }
+            input[type="range"]:active::-ms-thumb {
+                transform: scale(1.2);
+                background: #F27961;
+            }
 </style>
 </head>
 
@@ -181,9 +308,9 @@
     <!-- Masthead-->
     <header class="masthead-2">
         <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-90 align-items-center justify-content-center text-left">
+            <div class="row gx-4 gx-lg-5 h-90 align-items-center justify-content-center text-center">
                 <div class="text-white mb-5" style="text-align: left;">
-                    <p class="zona-n mt-5">CAPÍTULO I</p>
+                    <p class="zona-n">ZONA 2</p>
                     <p class="zona-p">ZAPALLAR</p>
                 </div>
                 <div class="col-lg-8 align-self-baseline">
@@ -199,16 +326,27 @@
     <section class="page-section">
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-
                 <div class="col-lg-7 col-md-7 text-left">
-                  <div class="p-intro-title">
-                    <p class="p-title text-white text-left">INTRODUCIÓN</p>
-                </div>
+                   <h1 class="titulo-proyecto">INTRODUCCIÓN</h1>
                    <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/INTRO.mp4" type="video/mp4">
                     </video>
+                  <div class="audio-player js-audio-player">
+                      <audio preload="auto">
+                        <source src="assets/img/capitulo-1/problematica/audios/02.PROBLEMAS-pescadores.mp3"/>
+                      </audio>
+                      <button class="audio-player__control js-control">
+                        <div class="audio-player__control-icon"></div>
+                      </button>
+                   </div>
+                    <div id="audio-player-container">
+                        <audio src="" preload="metadata" loop></audio>
+                        <span id="current-time" class="time text-white">0:00</span>
+                        <input type="range" id="seek-slider" max="100" value="0">
+                        <span id="duration" class="time text-white">0:00</span>
+                    </div>
                 </div>
-                <div class="col-lg-5 col-md-5 text-left">
+                <div class="col-lg-5 col-md-5 text-center">
                     <p class="parrafos-proyecto nombre-personaje regular-bold">"En Chile existe una política pública que permite crear lo que son denominadas las áreas de manejo y explotación de recursos betónicos. Estas áreas otorgan derechos de uso exclusivo a organizaciones de pescadores artesanales inscritos"</p>
                 </div>
             </div>
@@ -236,12 +374,9 @@
     <div class="wrapper d-flex flex-nowrap">
       <player class="player section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-left align-items-center">
         <div class="container px-4 px-lg-5 h-100">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-              <div class="col-lg-6 col-md-6 text-left">
-                <div class="podcast-title">
-                  <p class="p-title text-white text-left">PESCADORES</p>
-                  <p class="p-title p-subtitle text-white text-left">PROBLEMÁTICAS</p>
-              </div>
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+              <div class="col-lg-6 col-md-6 text-center">
+                   <h1 class="titulo-proyecto">PESCADORES</h1>
                    <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/PROBLEMAS - PESCADORES GIF.mp4" type="video/mp4">
                     </video>
@@ -254,7 +389,7 @@
                       </button>
                    </div>
               </div>
-               <div class="col-lg-6 col-md-6 text-left">
+               <div class="col-lg-6 col-md-6 text-center">
                   <p class="parrafos-proyecto nombre-personaje regular-bold">"Un refugio marino es una área de no extracción ubicada dentro de las áreas de manejo"</p>
               </div>
           </div>
@@ -262,12 +397,9 @@
       </player>
       <player class="player section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-left align-items-center">
         <div class="container px-4 px-lg-5 h-100">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-              <div class="col-lg-6 col-md-6 text-left">
-                <div class="podcast-title">
-                  <p class="p-title text-white text-left">INVESTIGADORES</p>
-                  <p class="p-title p-subtitle text-white text-left">PROBLEMÁTICAS</p>
-              </div>
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-left">
+              <div class="col-lg-6 col-md-6 text-center">
+                   <h1 class="titulo-proyecto">INVESTIGADORES</h1>
                    <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/PROBLEMAS - INVESTIGADORES GIF.mp4" type="video/mp4">
                     </video>
@@ -287,14 +419,11 @@
           </div>
         </div>
       </player>
-      <player class="player section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-left align-items-center">
+      <player class="player section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="container px-4 px-lg-5 h-100">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-                <div class="col-lg-6 col-md-6 text-left">
-                  <div class="podcast-title">
-                    <p class="p-title text-white text-left">BUZOS</p>
-                    <p class="p-title p-subtitle text-white text-left">PROBLEMÁTICAS</p>
-                </div>
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-6 col-md-6 text-center">
+                   <h1 class="titulo-proyecto">BUZOS</h1>
                    <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/PROBLEMAS - BUCEO GIF.mp4" type="video/mp4">
                     </video>
@@ -307,7 +436,7 @@
                       </button>
                     </div>
                 </div>
-               <div class="col-lg-6 col-md-6 text-left">
+               <div class="col-lg-6 col-md-6 text-center">
                   <p class="parrafos-proyecto nombre-personaje regular-bold">"Después de no bucear en un año, meterte a un lugar y que no estuviera el bosque de huiro que ibas a ver siempre, todas esas cosas generan inquietudes"</p>
               </div>
           </div>
@@ -335,12 +464,9 @@
     <div class="wrapper-2 d-flex flex-nowrap">
       <player class="player-2 section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="container px-4 px-lg-5 h-100">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-              <div class="col-lg-6 col-md-6 text-left">
-                <div class="podcast-title">
-                  <p class="p-title text-white text-left">CAPITAL AZUL</p>
-                  <p class="p-title p-subtitle text-white text-left">TRABAJO EN CONJUNTO</p>
-              </div>
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+              <div class="col-lg-6 col-md-6 text-center">
+                  <h1 class="titulo-proyecto">CAPITAL AZUL</h1>
                   <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/TRABAJO EN CONJUNTO - CAPITAL AZUL GIF.mp4" type="video/mp4">
                   </video>
@@ -353,7 +479,7 @@
                       </button>
                    </div>
               </div>
-               <div class="col-lg-6 col-md-6 text-left">
+               <div class="col-lg-6 col-md-6 text-center">
                   <p class="parrafos-proyecto nombre-personaje regular-bold">"Juntarse en un lugar y abrir su corazón es complicado en un sindicato de puros hombres, Capital Azul lo logró"</p>
               </div>
           </div>
@@ -361,12 +487,9 @@
       </player>
       <player class="player-2 section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="container px-4 px-lg-5 h-100">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-                <div class="col-lg-6 col-md-6 text-left">
-                  <div class="podcast-title">
-                    <p class="p-title text-white text-left">MUNICIPALIDAD</p>
-                    <p class="p-title p-subtitle text-white text-left">TRABAJO EN CONJUNTO</p>
-                </div>
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-6 col-md-6 text-center">
+                  <h1 class="titulo-proyecto">MUNICIPALIDAD</h1>
                   <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/TRABAJO EN CONJUNTO - MUNICIPALIDAD GIF.mp4" type="video/mp4">
                   </video>
@@ -379,7 +502,7 @@
                       </button>
                     </div>
                 </div>
-               <div class="col-lg-6 col-md-6 text-left">
+               <div class="col-lg-6 col-md-6 text-center">
                   <p class="parrafos-proyecto nombre-personaje regular-bold">"Desde el reconocimiento de ese lugar común que teníamos todos, este interés por el mar, empezamos a iniciar las conversaciones"</p>
               </div>
           </div>
@@ -387,12 +510,9 @@
       </player>
       <player class="player-2 section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="container px-4 px-lg-5 h-100">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-              <div class="col-lg-6 col-md-6 text-left">
-                <div class="podcast-title">
-                  <p class="p-title text-white text-left">COMUNIDAD</p>
-                  <p class="p-title p-subtitle text-white text-left">TRABAJO EN CONJUNTO</p>
-              </div>
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+              <div class="col-lg-6 col-md-6 text-center">
+                  <h1 class="titulo-proyecto">COMUNIDAD</h1>
                   <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/TRABAJO EN CONJUNTO - COMUNIDAD GIF.mp4" type="video/mp4">
                   </video>
@@ -406,7 +526,7 @@
                     </div>
 
               </div>
-               <div class="col-lg-6 col-md-6 text-left">
+               <div class="col-lg-6 col-md-6 text-center">
                   <p class="parrafos-proyecto nombre-personaje regular-bold">"El municipio puede llegar a gente y lugares en que no el sindicato ni la fundación eran capaces de llegar"</p>
               </div>
           </div>
@@ -432,14 +552,11 @@
     </header>
 
     <div class="wrapper-3 d-flex flex-nowrap">
-      <player class="player-3 section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-left align-items-center">
+      <player class="player-3 section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="container px-4 px-lg-5 h-100">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-              <div class="col-lg-6 col-md-6 text-left">
-                <div class="podcast-title">
-                  <p class="p-title text-white text-left">COMUNIDAD</p>
-                  <p class="p-title p-subtitle text-white text-left">VISIÓN A FUTURO</p>
-              </div>
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+              <div class="col-lg-6 col-md-6 text-center">
+                  <h1 class="titulo-proyecto">VISIÓN A FUTURO</h1>
                   <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/VISION A FUTURO - COMUNIDAD GIF.mp4" type="video/mp4">
                   </video>
@@ -452,20 +569,17 @@
                       </button>
                    </div>
               </div>
-               <div class="col-lg-6 col-md-6 text-left">
+               <div class="col-lg-6 col-md-6 text-center">
                   <p class="parrafos-proyecto nombre-personaje regular-bold">"Gracias a este refugio se van a poder resguardar distintas especies al no poder ser cazadas"</p>
               </div>
           </div>
         </div>
       </player>
-      <player class="player-3 section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-left align-items-center">
+      <player class="player-3 section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="container px-4 px-lg-5 h-100">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-                <div class="col-lg-6 col-md-6 text-left">
-                  <div class="podcast-title">
-                    <p class="p-title text-white text-left">INVESTIGADORES</p>
-                    <p class="p-title p-subtitle text-white text-left">VISIÓN A FUTURO</p>
-                </div>
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <h1 class="titulo-proyecto">VISIÓN A FUTURO</h1>
                     <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/VISION A FUTURO - INVESTIGADORES  GIF.mp4" type="video/mp4">
                     </video>
@@ -478,7 +592,7 @@
                       </button>
                     </div>
                 </div>
-               <div class="col-lg-6 col-md-6 text-left">
+               <div class="col-lg-6 col-md-6 text-center">
                   <p class="parrafos-proyecto nombre-personaje regular-bold">"Finalmente, el valor en conservación mas importante es que vaya siendo un trabajo constante a través del litoral"</p>
               </div>
           </div>
@@ -505,16 +619,14 @@
 
     <section class="page-section">
         <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-left text-left">
-                <div class="col-lg-6 col-md-6 text-left">
-                  <div class="p-intro-title">
-                    <p class="p-title text-white text-left">VISIÓN COMPARTIDA</p>
-                </div>
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <h1 class="titulo-proyecto">VISIÓN COMPARTIDA</h1>
                     <video width="100%" height="100%" autoplay loop muted="">
                         <source src="assets/img/capitulo-1/Videos/VISION COMPARTIDA GIF.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="col-lg-6 col-md-6 text-left">
+                <div class="col-lg-6 col-md-6 text-center">
                     <p class="parrafos-proyecto nombre-personaje regular-bold">"El tema de las leyes de pesca es bien importante también como para tener mayor conservación"</p>
                 </div>
             </div>
@@ -544,7 +656,7 @@
         </video>
     </section>
     <section style="border-top: 1px solid white;">
-        <div class="container text-left">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-4 align-self-baseline">
                     <div class="text-white">PROYECTO CARACOLA</div>
@@ -561,14 +673,14 @@
 
     <header class="masthead-2" style="border-top: 1px solid white;background: linear-gradient(180deg, rgba(74, 96, 207, 0.81) 0%, rgba(74, 96, 207, 0.61) 0.01%, rgba(0, 0, 0, 0.36) 25.94%, rgba(0, 0, 0, 0.38) 49.8%, rgba(0, 0, 0, 0.23) 78.75%, rgba(74, 96, 207, 0.29) 100%);mix-blend-mode: normal;">
         <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-left">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="text-white mb-5" style="text-align: left;">
                     <p class="zona-n"></p>
                     <p class="zona-p"></p>
                 </div>
                 <div class="col-lg-8 align-self-baseline">
                     <h1 class="text-white cap-sect-title">CAPÍTULO II</h1>
-                    <h3 class="text-white cap-sect-title">ALGARROBO</h3>
+                    <h3 class="text-white cap-sect-title">ZAPALLAR</h3>
                 </div>
                 <div class="text-white mb-5" style="text-align: left;">
                     <p class="zona-n"></p>
@@ -587,10 +699,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SimpleLightbox plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-    <script src="js/carousel.js" type="text/javascript"></script>
     <!--Gsap-->
-    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
-    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js'></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script>

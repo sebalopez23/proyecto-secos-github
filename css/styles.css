@@ -14,6 +14,100 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 
+
+
+
+
+/* prompt-100 - latin */
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/prompt-v10-latin-100.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(../fonts/prompt-v10-latin-100.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(../fonts/prompt-v10-latin-100.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/prompt-v10-latin-1atin-200.woff) format('woff'), /* Modern Browsers */
+       url(../fonts/prompt-v10-latin-100.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/prompt-v10-latin-100.svg#Prompt) format('svg'); /* Legacy iOS */
+}
+
+/* prompt-100italic - latin */
+@font-face {
+  font-family: 'Prompt';
+  font-style: italic;
+  font-weight: 100;
+  src: url(..../fonts/prompt-v10-latin-100italic.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(../fonts/prompt-v10-latin-100italic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(../fonts/prompt-v10-latin-100italic.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/prompt-v10-latin-100italic.woff) format('woff'), /* Modern Browsers */
+       url(../fonts/prompt-v10-latin-100italic.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/prompt-v10-latin-100italic.svg#Prompt) format('svg'); /* Legacy iOS */
+}
+
+/* prompt-200 - latin */
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 200;
+  src: url(../fonts/prompt-v10-latin-200.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(../fonts/prompt-v10-latin-200.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(../fonts/prompt-v10-latin-200.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/prompt-v10-latin-latin-200.woff) format('woff'), /* Modern Browsers */
+       url(../fonts/prompt-v10-latin-200.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/prompt-v10-latin-200.svg#Prompt) format('svg'); /* Legacy iOS */
+}
+
+
+/* prompt-200italic - latin */
+@font-face {
+  font-family: 'Prompt';
+  font-style: italic;
+  font-weight: 200;
+  src: url(../fonts/prompt-v10-latin-200italic.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(../fonts/prompt-v10-latin-200italic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(../fonts/prompt-v10-latin-200italic.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/prompt-v10-latin-200italic.woff) format('woff'), /* Modern Browsers */
+       url(../fonts/prompt-v10-latin-200italic.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/prompt-v10-latin-200italic.svg#Prompt) format('svg'); /* Legacy iOS */
+}
+
+/* prompt-300 - latin */
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/prompt-v10-latin-300.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(../fonts/prompt-v10-latin-300.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(../fonts/prompt-v10-latin-300.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/prompt-v10-latin-300.woff) format('woff'), /* Modern Browsers */
+       url(../fonts/prompt-v10-latin-300.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/prompt-v10-latin-300.svg#Prompt) format('svg'); /* Legacy iOS */
+}
+
+/* prompt-regular - latin */
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/prompt-v10-latin-regular.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(../fonts/prompt-v10-latin-regular.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(../fonts/prompt-v10-latin-regular.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/prompt-v10-latin-regular.woff) format('woff'), /* Modern Browsers */
+       url(../fonts/prompt-v10-latin-regular.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/prompt-v10-latin-regular.svg#Prompt) format('svg'); /* Legacy iOS */
+}
+
+
+
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -288,6 +382,9 @@ a {
 }
 
 a:hover {
+  color: #fc8870 !important;
+}
+a:active {
   color: #fc8870 !important;
 }
 
@@ -12885,6 +12982,38 @@ body {
   bottom: 100px;
 }
 
+.back-float {
+  position: fixed;
+    /* width: 30px;
+    height: 30px; */
+    bottom: 6rem;
+    left:9rem;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: none;
+    z-index: 100;
+    color:#ffffff
+}
+
+.back-text {
+color: #ffffff;
+font-size: 10px !important;
+letter-spacing: 0.1em !important;
+line-height: 10px !important;
+}
+
+.back-text:hover {
+  color: coral !important;
+  }
+
+ @media screen and (min-width: 767) {
+    .region {
+        scroll-behavior: smooth;  
+    } 
+} 
+
   
 /* Queries formas olas */
 @media (min-width: 1801px) {
@@ -12952,6 +13081,20 @@ body {
 
 
 
+
+
+/* 
+@media (max-width: 576px){
+  .chapter-container {
+   width: 200px;
+  }
+}    */
+
+
+
+
+
+
 .arrow_scroll {
   animation: fadeOutDown 1s linear infinite;
   width: 60px;
@@ -13011,7 +13154,15 @@ font-size: 1.1rem;
 .caja {
   width: 50%;
   margin: 0 auto;
+  background-color: transparent;
+  text-align: left;
+  border: none;
+  color:#ffffff;
 }
+.caja:hover {
+ color: coral !important;
+ }
+
 
  .caja :is(h5, p){
   text-align: left;
@@ -13037,21 +13188,26 @@ font-size: 1.1rem;
 } */
 
  .submenu-text {
-  /* text-align: left !important; */
+ text-align: left !important; 
   font-weight: 300 !important;
   font-size: 14px;
-  cursor:pointer;
+  cursor: pointer;
   letter-spacing: 1px;
  } 
 
- .submenu-text{
+  .btn .submenu-text{
   transition:all 0.5s;
   color: #fff;
- }
- .submenu-text:hover{
+ } 
+ .btn .submenu-text:hover{
   color: coral;
     transition:all 0.5s;
- }
+ } 
+ .btn .submenu-text:active {
+  color: coral !important;
+}
+
+
 
  .wsp-text {
  font-size: 20px;
@@ -13095,7 +13251,7 @@ font-size: 1.1rem;
   } 
 
   .chapter-container {
-    padding: 36px;
+    padding: 20px;
   }
 
   .p-intro-title {
@@ -13140,90 +13296,6 @@ font-size: 1.1rem;
   
 
 
-/* prompt-100 - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 100;
-  src: url(../fonts/prompt-v10-latin-100.eot); /* IE9 Compat Modes */
-  src: local(''),
-       url(../fonts/prompt-v10-latin-100.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
-       url(../fonts/prompt-v10-latin-100.woff2) format('woff2'), /* Super Modern Browsers */
-       url(../fonts/prompt-v10-latin-1atin-200.woff) format('woff'), /* Modern Browsers */
-       url(../fonts/prompt-v10-latin-100.ttf) format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/prompt-v10-latin-100.svg#Prompt) format('svg'); /* Legacy iOS */
-}
-
-/* prompt-100italic - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 100;
-  src: url(..../fonts/prompt-v10-latin-100italic.eot); /* IE9 Compat Modes */
-  src: local(''),
-       url(../fonts/prompt-v10-latin-100italic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
-       url(../fonts/prompt-v10-latin-100italic.woff2) format('woff2'), /* Super Modern Browsers */
-       url(../fonts/prompt-v10-latin-100italic.woff) format('woff'), /* Modern Browsers */
-       url(../fonts/prompt-v10-latin-100italic.ttf) format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/prompt-v10-latin-100italic.svg#Prompt) format('svg'); /* Legacy iOS */
-}
-
-/* prompt-200 - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 200;
-  src: url(../fonts/prompt-v10-latin-200.eot); /* IE9 Compat Modes */
-  src: local(''),
-       url(../fonts/prompt-v10-latin-200.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
-       url(../fonts/prompt-v10-latin-200.woff2) format('woff2'), /* Super Modern Browsers */
-       url(../fonts/prompt-v10-latin-latin-200.woff) format('woff'), /* Modern Browsers */
-       url(../fonts/prompt-v10-latin-200.ttf) format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/prompt-v10-latin-200.svg#Prompt) format('svg'); /* Legacy iOS */
-}
-
-
-/* prompt-200italic - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 200;
-  src: url(../fonts/prompt-v10-latin-200italic.eot); /* IE9 Compat Modes */
-  src: local(''),
-       url(../fonts/prompt-v10-latin-200italic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
-       url(../fonts/prompt-v10-latin-200italic.woff2) format('woff2'), /* Super Modern Browsers */
-       url(../fonts/prompt-v10-latin-200italic.woff) format('woff'), /* Modern Browsers */
-       url(../fonts/prompt-v10-latin-200italic.ttf) format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/prompt-v10-latin-200italic.svg#Prompt) format('svg'); /* Legacy iOS */
-}
-
-/* prompt-300 - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/prompt-v10-latin-300.eot); /* IE9 Compat Modes */
-  src: local(''),
-       url(../fonts/prompt-v10-latin-300.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
-       url(../fonts/prompt-v10-latin-300.woff2) format('woff2'), /* Super Modern Browsers */
-       url(../fonts/prompt-v10-latin-300.woff) format('woff'), /* Modern Browsers */
-       url(../fonts/prompt-v10-latin-300.ttf) format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/prompt-v10-latin-300.svg#Prompt) format('svg'); /* Legacy iOS */
-}
-
-/* prompt-regular - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/prompt-v10-latin-regular.eot); /* IE9 Compat Modes */
-  src: local(''),
-       url(../fonts/prompt-v10-latin-regular.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
-       url(../fonts/prompt-v10-latin-regular.woff2) format('woff2'), /* Super Modern Browsers */
-       url(../fonts/prompt-v10-latin-regular.woff) format('woff'), /* Modern Browsers */
-       url(../fonts/prompt-v10-latin-regular.ttf) format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/prompt-v10-latin-regular.svg#Prompt) format('svg'); /* Legacy iOS */
-}
 
 /* END Optional styles */
 .video-container {

@@ -126,6 +126,7 @@ h1,
   font-family: "Prompt", "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
   line-height: 1.2;
+  text-decoration: none !important;
 }
 
 h1,
@@ -284,7 +285,6 @@ sup {
 
 a {
   color: #f4623a;
-  text-decoration: underline;
 }
 
 a:hover {
@@ -13023,17 +13023,35 @@ font-size: 1.1rem;
  }
 
 .menu-cap {
-  font-weight: 300 !important;
-  font-size: 34px;
-  cursor:pointer;
+  font-weight: 400 !important;
+  font-size: 18px;
+  letter-spacing: 1px;
  } 
 
- .submenu-cap {
+ .min_map_subtitle {
+  font-size: 28px;
+ }
+
+/* #c3 {
+  text-decoration: none;
+} */
+
+ .submenu-text {
+  /* text-align: left !important; */
   font-weight: 300 !important;
-  font-size: 18px;
+  font-size: 14px;
   cursor:pointer;
-  line-height: 30px;
+  letter-spacing: 1px;
  } 
+
+ .submenu-text{
+  transition:all 0.5s;
+  color: #fff;
+ }
+ .submenu-text:hover{
+  color: coral;
+    transition:all 0.5s;
+ }
 
  .wsp-text {
  font-size: 20px;
@@ -13041,10 +13059,21 @@ font-size: 1.1rem;
 
 .min_map_title {
   font-weight: 300 !important;
-  font-size: 55px ;
+  font-size: 55px;
   letter-spacing: 14px;
   text-align: left;
   } 
+ 
+  .menu-link {
+    color: white;
+    font-size: 14px;
+    font-weight: 400 !important;
+    transition:all 0.5s !important;
+  }
+  .menu-link:hover {
+    color: coral !important;
+    transition:all 0.5s !important;
+  }
  
 .min_map_subtitle{
    font-weight: 200 !important;
@@ -13052,18 +13081,12 @@ font-size: 1.1rem;
    letter-spacing: 10px;
    text-align: left;
    color: white;
-   transition:all 0.5s;
+   transition:all 0.5s !important;
    } 
    .min_map_subtitle:hover {
-    color: coral;
-    transition:all 0.5s;
+    color: coral !important;
+    transition:all 0.5s !important;
   }
-
-   .map-link {
-    text-decoration: none;
-   }
-
-
 
 .min-subt {
       font-weight: 200;
@@ -13074,9 +13097,6 @@ font-size: 1.1rem;
   .chapter-container {
     padding: 36px;
   }
-
-
-
 
   .p-intro-title {
     position: relative;
@@ -13284,5 +13304,8 @@ font-size: 1.1rem;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   opacity: 0.9;
+}
+a:any-link{
+  text-decoration: none !important;
 }
 

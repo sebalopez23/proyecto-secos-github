@@ -4,23 +4,23 @@
 }
 
 .coquimbo,
-.lagos {
-    fill: lightsalmon;
+.lagos, .biobio {
+    fill: lightblue;
 }
-
+/* 
 .coquimbo:hover,
 .lagos:hover {
     fill: coral;
     cursor: pointer;
+} */
+
+.valpo
+ {
+    fill: lightsalmon;
 }
 
-.valpo,
-.biobio {
-    fill: lightblue;
-}
-
-.valpo:hover,
-.biobio:hover {
+.valpo:hover
+ {
     fill: coral;
     cursor: pointer;
 }
@@ -99,6 +99,4 @@
         opacity: 1;
     }
 }
-
-
 

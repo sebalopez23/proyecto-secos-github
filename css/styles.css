@@ -12885,7 +12885,11 @@ body {
   bottom: 100px;
 }
 
-  
+.active {
+  color: coral !important;
+  }
+
+
 /* Queries formas olas */
 @media (min-width: 1801px) {
   .forma1 {

@@ -904,6 +904,14 @@
         observer.observe(target);
     })()
     </script>
+
+<script>
+  $('a.active-text').click(function(){
+      $('a.submenu-text').removeClass("active");
+      $(this).addClass("active");
+  });
+  </script>
+  
 </body>
 
 </html> 

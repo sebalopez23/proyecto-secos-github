@@ -149,9 +149,10 @@
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                            <li class="nav-item"><a class="nav-link light-text" href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
+                            <li class="nav-item"><a class="nav-link light-text active-text" href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
                             <li class="nav-item"><a class="nav-link light-text" href="https://socioecologiacostera.cl/" target="_blank">SECOS</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">
@@ -177,7 +178,7 @@
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link" href="#services">
+                                <a class="nav-link" href="#services" target="_blank">
                                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="spotify-icon">
                                     <path d="M20.723 11.4518C16.5412 9.41403 9.85578 9.71517 6.15392 11.2124C5.54647 11.4507 4.89273 11.1284 4.65958 10.5832C4.42129 9.97574 4.74359 9.322 5.28875 9.08885C9.6032 7.41565 16.9115 7.06309 21.7471 9.42319C22.3334 9.68834 22.582 10.4204 22.3168 11.0067C22.0414 11.4684 21.3093 11.717 20.723 11.4518ZM20.8865 14.9502C20.611 15.412 20.0659 15.6451 19.6041 15.3697C16.0709 13.5919 10.9118 13.3907 7.09052 14.9605C6.6025 15.1262 6.02133 14.9234 5.85562 14.4353C5.6899 13.9473 5.89276 13.3662 6.38078 13.2004C10.8147 11.4547 16.4772 11.677 20.5345 13.7251C20.9236 13.8811 21.1619 14.4885 20.8865 14.9502ZM19.6744 18.4995C19.4561 18.8938 19.0304 19.0544 18.6361 18.8361C15.5594 17.2715 11.8535 17.2012 7.57567 18.5578C7.14994 18.7184 6.7505 18.4378 6.59506 18.0743C6.43449 17.6486 6.71507 17.2492 7.07851 17.0937C11.725 15.644 15.872 15.7406 19.2755 17.4663C19.727 17.6172 19.8304 18.1104 19.6744 18.4995ZM12.4576 0.971422C10.8217 1.1065 9.22832 1.56247 7.76858 2.31332C6.30885 3.06417 5.0113 4.09518 3.95001 5.34749C1.80665 7.87664 0.755782 11.1536 1.02858 14.4576C1.30137 17.7616 2.87549 20.8218 5.40464 22.9652C6.65695 24.0265 8.10603 24.8307 9.66915 25.332C11.2323 25.8332 12.8788 26.0217 14.5148 25.8866C17.8187 25.6138 20.879 24.0397 23.0224 21.5106C25.1657 18.9814 26.2166 15.7044 25.9438 12.4005C25.8087 10.7645 25.3527 9.17116 24.6019 7.71143C23.8511 6.25169 22.82 4.95414 21.5677 3.89286C20.3154 2.83157 18.8663 2.02734 17.3032 1.52608C15.7401 1.02482 14.0936 0.836347 12.4576 0.971422Z" fill="#49FAA5"/></svg>
                                 </a>
@@ -201,58 +202,59 @@
 
           
 
-            <div class="container text-center">
+            <div class="container text-left align-content-center">
 
-                <div class="row mt-5">
-                    <div class="col">
+                <div class="row mt-5 justify-content-evenly align-content-center">
+
+                    <div class="zonas col-4" id="zonas">
                         <div class="caja c1">
-                            <h5 class="text-white regular-bold mt-5 mb-2 menu-cap" onclick="myFunction()">COQUIMBO </h5>
-                            <p class="text-white submenu-cap">CALETA CHUNGUNGO</p>
+                            <h5 class="text-white regular-bold mt-5 mb-3 menu-cap">ZONA 1: COQUIMBO </h5>
+                            <a class="text-white submenu-text" onclick="myFunction()">·SECTOR: C. CHUNGUNGO</a>
                         </div>
                         <div class="caja c4">
-                            <h5 class="text-white mt-5 regular-bold mb-2 menu-cap" onclick="myFunction()">VALPARAÍSO </h5>
-                            <p class="text-white submenu-cap">ZAPALLAR</p>
-                            <p class="text-white submenu-cap">ALGARROBO</p>
+                            <h5 class="text-white mt-5 regular-bold mb-3 menu-cap">ZONA 2: VALPARAÍSO </h5>
+                            <a class="text-white submenu-text" onclick="myFunction()">·SECTOR: ZAPALLAR</a>
+                            <a class="text-white submenu-text" onclick="myFunction()">·SECTOR: ALGARROBO</a>
                         </div>
                         <div class="caja c6">
-                            <h5 class="text-white mt-5 regular-bold mb-2 menu-cap" onclick="myFunction()">BÍO BÍO </h5>
-                            <p class="text-white submenu-cap">EL MAULE</p>
+                            <h5 class="text-white mt-5 regular-bold mb-3 menu-cap">ZONA 3: BÍO BÍO </h5>
+                            <a class="text-white active-text submenu-text" onclick="myFunction()">·SECTOR: EL MAULE</a>
                         </div>
                         <div class="caja c8 ">
-                            <h5 class="text-white mt-5 regular-bold mb-2 menu-cap" onclick="myFunction()">LOS LAGOS </h5>
-                            <p class="text-white submenu-cap">HUALAIHUÉ</p>
+                            <h5 class="text-white mt-5 mb-3 menu-cap">ZONA 4: LOS LAGOS </h5>
+                            <a class="text-white active-text submenu-text" onclick="myFunction()">·SECTOR: HUALAIHUÉ</a>
                           
                         </div>
                     </div>
                    
 
-                    <div class="col">
-
+                    <div class="col-4">
 
                         <div id="c3" class="c3">
-                            <!-- <a href="capitulo-1.html">
+                            <a href="capitulo-1.html">
                                     <div class="caja c1">
-                                        <h5 class="text-white text-left mt-5 menu-cap">Museo Escolar Caleta Chungungo</h5>
-                                    </div> -->
+                                        <!-- <h5 class="text-white text-left mt-5 menu-cap regular-bold menu-link">MUSEO ESCOLAR</h5> -->
+                                        <h5 class="text-white text-left mt-5 menu-cap regular-bold menu-link">REFUGIOS MARINOS</h5>
+                                    </div> 
 
 
-                        <!-- <div id="c4" class="c4"> -->
+                            <!-- <div id="c4" class="c4"> 
                              <a href="capitulo-1.html">     
-                                        <h5 class="text-white text-left mt-5 menu-cap">Refugios Marinos Zapallar</h5>
-                         </div> 
+                                        <h5 class="text-white text-left mt-5 menu-cap regular-bold menu-link">REFUGIOS MARINOS</h5>
+                         </div>  -->
 
 
 <!-- 
                         <div class="c6" class="c6">
                             <a href="capitulo-1.html">
-                                        <h5 class="text-white mt-5 menu-cap" >Capítulo por confirmar Maule</h5>
+                                        <h5 class="text-white mt-5 menu-cap regular-bold menu-link" >Capítulo por confirmar Maule</h5>
                         </div>
 
 
                         <div class="c8" class="c8">
                             <a href="capitulo-1.html">
-                                        <h5 class="text-white menu-cap" >Acidificación Caleta El Manzano</h5>
-                                        <h5 class="text-white menu-cap" >Boya Oceanográfica</h5>
+                                        <h5 class="text-white menu-cap regular-bold menu-link" >Acidificación Caleta El Manzano</h5>
+                                        <h5 class="text-white menu-cap regular-bold menu-link" >Boya Oceanográfica</h5>
                         </div>  -->
 
 
@@ -277,7 +279,7 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link light-text" href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
+                    <li class="nav-item"><a class="nav-link light-text active-text" href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
                     <li class="nav-item"><a class="nav-link light-text" href="https://socioecologiacostera.cl/" target="_blank">SECOS</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">
@@ -298,7 +300,7 @@
                     </li>
 
                     <li class="nav-item spotify-icon">
-                        <a class="nav-link" href="#services">
+                        <a class="nav-link" href="#services" target="_blank">
                             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.723 11.4518C16.5412 9.41403 9.85578 9.71517 6.15392 11.2124C5.54647 11.4507 4.89273 11.1284 4.65958 10.5832C4.42129 9.97574 4.74359 9.322 5.28875 9.08885C9.6032 7.41565 16.9115 7.06309 21.7471 9.42319C22.3334 9.68834 22.582 10.4204 22.3168 11.0067C22.0414 11.4684 21.3093 11.717 20.723 11.4518ZM20.8865 14.9502C20.611 15.412 20.0659 15.6451 19.6041 15.3697C16.0709 13.5919 10.9118 13.3907 7.09052 14.9605C6.6025 15.1262 6.02133 14.9234 5.85562 14.4353C5.6899 13.9473 5.89276 13.3662 6.38078 13.2004C10.8147 11.4547 16.4772 11.677 20.5345 13.7251C20.9236 13.8811 21.1619 14.4885 20.8865 14.9502ZM19.6744 18.4995C19.4561 18.8938 19.0304 19.0544 18.6361 18.8361C15.5594 17.2715 11.8535 17.2012 7.57567 18.5578C7.14994 18.7184 6.7505 18.4378 6.59506 18.0743C6.43449 17.6486 6.71507 17.2492 7.07851 17.0937C11.725 15.644 15.872 15.7406 19.2755 17.4663C19.727 17.6172 19.8304 18.1104 19.6744 18.4995ZM12.4576 0.971422C10.8217 1.1065 9.22832 1.56247 7.76858 2.31332C6.30885 3.06417 5.0113 4.09518 3.95001 5.34749C1.80665 7.87664 0.755782 11.1536 1.02858 14.4576C1.30137 17.7616 2.87549 20.8218 5.40464 22.9652C6.65695 24.0265 8.10603 24.8307 9.66915 25.332C11.2323 25.8332 12.8788 26.0217 14.5148 25.8866C17.8187 25.6138 20.879 24.0397 23.0224 21.5106C25.1657 18.9814 26.2166 15.7044 25.9438 12.4005C25.8087 10.7645 25.3527 9.17116 24.6019 7.71143C23.8511 6.25169 22.82 4.95414 21.5677 3.89286C20.3154 2.83157 18.8663 2.02734 17.3032 1.52608C15.7401 1.02482 14.0936 0.836347 12.4576 0.971422Z" fill="#49FAA5"/></svg>
                         </a>
@@ -576,8 +578,9 @@
 
 <!-- Mapa Chile -->
     <section class="container">
-      <div class="row map-container">
-          <div class="col-xs-2 col-md-4 col-ml-6 col-lg-6">
+      <div class="row map-container align-items-center justify-content-center">
+
+          <div class="col-xs-4 col-sm-4 col-md-4 col-ml-6 col-lg-6">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 869.136 3719.887" id="mapa">
                   <defs>
                       <style>
@@ -1103,10 +1106,11 @@
           </div>
 
         
-          <div class="col-xs-8 col-md-6 col-ml-6 col-lg-6">
+          <div class="region col-xs-4 col-sm-4 col-md-6 col-ml-6 col-lg-6" id="region">
+            <a href="index.html#region"></a>
             <!-- Zona 1 -->
               <div class="zona1 fade-in-image">
-                <div class="chapter-container mt-5 pt-5">
+                <div class="chapter-container">
                   <div>
                   <img class="img-fluid"
                   src="assets/img/Valparaiso.png" alt="foto-region-valparaiso"><!-- style="position: relative; left: 15%;"  -->
@@ -1126,7 +1130,7 @@
 
               <!-- Zona 2 -->
               <div class="row zona-container zona2 fade-in-image" style="display: none;">
-                  <div class="chapter-container mt-5 pt-5">
+                  <div class="chapter-container">
                       <div>
                           <img class="img-fluid" src="assets/img/Valparaiso.png"
                               alt="foto-region-valparaiso"> <!-- style="position: relative; left: 15%;"  -->
@@ -1167,7 +1171,7 @@
 
                 <!-- Zona 4 -->
                 <div class="row zona-container zona4 fade-in-image" style="display: none;">
-                    <div class="chapter-container mt-5 pt-5">
+                    <div class="chapter-container">
                         <div>
                             <img class="img-fluid pt-5" 
                             src="assets/img/mapa-loslagos.png" alt="foto-region-los-lagos"><!-- style="position: relative; left: 15%;"  -->
@@ -1175,7 +1179,7 @@
        
                <div style="position: absolute; top: 30%; color: white; ">
                 <h6 class="min-subt">ZONA 4</h4>
-                <h2 class="regular-bold min_map_title light-text" >REGIÓN DE<br>LOSLAGOS</h2>
+                <h2 class="regular-bold min_map_title light-text" >REGIÓN DE<br>LOS LAGOS</h2>
                 <br>
                 <h6 class="min-subt">SECTOR</h6>
                 <a href="capitulo-1.html" class="map-link">
@@ -1258,6 +1262,8 @@
         }
     </script>
 
+
+
     <!--Core theme JS-->
     <script src="js/scripts.js"></script>
     
@@ -1332,6 +1338,14 @@
           })
         }
     </script>
+
+<script>
+    $('a.active-text').click(function(){
+        $('a.submenu-text').removeClass("active");
+        $(this).addClass("active");
+    });
+    </script>
+
     <script src="js/mapa.js"></script>
 </body>
 

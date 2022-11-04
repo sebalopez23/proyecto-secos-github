@@ -22,6 +22,7 @@ $(document).ready(function () {
 $('.valpo').click(function (e) {
     e.preventDefault(); $(".zona2").show();
     $(".zona1, .zona3, .zona4").hide();
+  //  window.alert("screen width" + screen.width)
     if(screen.width < 576){
         location.href = "index.html#region";
       }

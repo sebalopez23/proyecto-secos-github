@@ -4611,6 +4611,7 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   color: #F27961;
   text-decoration: none;
+  letter-spacing: 0.08rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
@@ -13122,7 +13123,7 @@ line-height: 10px !important;
 
 
 /* textos prompt  */
-.text-white-p, .texto-audio, .intro-home, .cuñas-home {
+.text-white-p, .texto-audio, .intro-home, .cuñas-home, .wsp-text {
   letter-spacing: 0.1rem;
   line-height: 1.4rem;
 }
@@ -13134,6 +13135,11 @@ line-height: 10px !important;
 }
 
 .intro-home {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.cuñas-home {
   font-weight: 200;
   font-size: 1.2rem;
 }
@@ -13145,9 +13151,19 @@ font-size: 1.1rem;
 
 .nombre-personaje {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 200;
   font-style: italic;
 }
+
+.wsp-text {
+  font-size: 1.2rem;
+  }
+
+.icon-text {
+  font-size: 0.9rem !important;
+  letter-spacing: 0.1rem;
+  font-weight: 200 !important;
+} 
 
 .regular-bold {
   font-weight: normal;
@@ -13211,12 +13227,6 @@ font-size: 1.1rem;
  .btn .submenu-text:active {
   color: coral !important;
 }
-
-
-
- .wsp-text {
- font-size: 20px;
- }
 
 .min_map_title {
   font-weight: 300 !important;

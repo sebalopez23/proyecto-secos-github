@@ -189,7 +189,9 @@
             </nav>
             <br><br>
             <br><br>
-            <div class="menu-bar sidebar-widget-container">
+            <div id="sideBar" class="menu-bar sidebar-widget-container {
+                box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+                background-color: #3f52b7;">
                 <div class="side-content-button-box">
                     <div class="side-content-button">
                         <a>
@@ -199,35 +201,32 @@
                 </div>
             </div>
 
-
-          
-
             <div class="container text-left align-content-center">
 
-                <div class="row mt-5 justify-content-evenly align-content-center">
+                <div class="row mt-5 justify-content-stretch align-content-center">
 
-                    <div class="zonas col-4">
+                    <div class="zonas col-6">
                         <div class="caja c1">
                             <h5 class="text-white regular-bold mt-5 mb-3 menu-cap">ZONA 1: COQUIMBO </h5>
-                            <a class="text-white active-text submenu-text" onclick="myFunction()">·SECTOR: C. CHUNGUNGO</a>
+                            <a class="text-white active-text submenu-text">·SECTOR: C. CHUNGUNGO</a>
                         </div>
                         <div class="caja c4">
                             <h5 class="text-white mt-5 regular-bold mb-3 menu-cap">ZONA 2: VALPARAÍSO </h5>
-                            <a class="text-white active-text submenu-text" onclick="myFunction()">·SECTOR: ZAPALLAR</a>
-                            <a class="text-white active-text submenu-text" onclick="myFunction()">·SECTOR: ALGARROBO</a>
+                            <div><a class="text-white active-text show-cap submenu-text" onclick="myFunction()">·SECTOR: ZAPALLAR</a></div>
+                            <div><a class="text-white active-text submenu-text">·SECTOR: ALGARROBO</a></div>
                         </div>
                         <div class="caja c6">
                             <h5 class="text-white mt-5 regular-bold mb-3 menu-cap">ZONA 3: BÍO BÍO </h5>
-                            <a class="text-white active-text submenu-text" onclick="myFunction()">·SECTOR: EL MAULE</a>
+                            <a class="text-white active-text submenu-text">·SECTOR: EL MAULE</a>
                         </div>
                         <div class="caja c8 ">
                             <h5 class="text-white mt-5 mb-3 menu-cap">ZONA 4: LOS LAGOS </h5>
-                            <a class="text-white active-text submenu-text" onclick="myFunction()">·SECTOR: HUALAIHUÉ</a>
+                            <a class="text-white active-text submenu-text">·SECTOR: HUALAIHUÉ</a>
                         </div>
                     </div>
                    
 
-                    <div class="col-4">
+                    <div class="col-6">
 
                         <div id="c3" class="c3">
                             <a href="capitulo-1.html">
@@ -378,7 +377,7 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold"><img class="img-fluid" src="assets/img/Logo.png" width="65%"></h1>
+                    <div class="text-white font-weight-bold"><img class="img-fluid" src="assets/img/Logo.png" width="65%"></div>
                 </div>
                 <div class="col-lg-8 align-self-baseline">
                     <p class="text-white-p text-center texto-audio mt-2">Para una mejor experiencia <br> puedes activar el sonido</p>
@@ -490,7 +489,7 @@
                         <p class="text-white wsp-text regular-bold">¿Te gustaría participar?<br>¡Escríbenos y construyamos juntos "la voz del mar"!</p>
                         <br>
                         <a class="btn btn-primary py-3" href="https://api.whatsapp.com/send/?phone=56958656997&text=¡Hola! Estoy interesado en participar en el Proyecto Caracola...&type=phone_number&app_absent=0">
-                          <span class="white text regular-bold">Escribir whatsapp <i class="fa fa-whatsapp"></i></span></a>
+                          <span class="white text wsp-btn-text regular-bold">Escribir whatsapp <i class="fa fa-whatsapp"></i></span></a>
                     </div>
                 </div>
                 </div>
@@ -1109,7 +1108,7 @@
             <a href="index.html#region"></a>
             
             <!-- Zona 1 -->
-              <div class="zona1 fade-in-image">
+              <div class="zona1 fade-in-image"  style="display: none;">
                 <div class="chapter-container">
                   <div>
                   <img class="img-fluid"
@@ -1129,7 +1128,7 @@
               </div>
 
               <!-- Zona 2 -->
-              <div class="row zona-container zona2 fade-in-image" style="display: none;">
+              <div class="row zona-container zona2 fade-in-image">
                   <div class="chapter-container">
                       <div>
                           <img class="img-fluid" src="assets/img/Valparaiso.png"

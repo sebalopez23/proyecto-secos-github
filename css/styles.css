@@ -379,6 +379,7 @@ sup {
 
 a {
   color: #f4623a;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -12776,6 +12777,11 @@ header.masthead-2 .h1 {
   -ms-flex-align: center;
   align-items: center;
   border-right: 1px solid white;
+  background-color: transparent;
+}
+
+.menu-bar {
+/* background-color: #3f52b7; */
 }
 
 .menu-area-bt {
@@ -12804,6 +12810,13 @@ header.masthead-2 .h1 {
   border-radius: 100%;
   box-sizing: border-box;
   cursor: pointer;
+  background-color: transparent;
+  transition:all 0.5s !important;
+}
+
+.menu-bar__bt:hover {
+  background-color: #F27961;
+  transition:all 0.5s !important;
 }
 
 .footer-bg {
@@ -12883,6 +12896,7 @@ header.masthead-2 .h1 {
   /* or 100% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  line-height: 52px;
 
   color: #FFFFFF;
 }
@@ -12890,13 +12904,14 @@ header.masthead-2 .h1 {
 .header-proyecto {
   font-family: 'Prompt';
   font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
+  font-weight: 300 !important;
+  font-size: 15px;
+  line-height: 26px;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  text-align: left;
 
 }
 .titulo-proyecto {
@@ -12938,6 +12953,7 @@ li.spotify-icon:hover {
 
 .titulo-fef {
   text-align: left;
+  line-height: 2.5rem;
 }
 
 .font-weight-bold {
@@ -12972,6 +12988,12 @@ body {
 	position: relative;
 }
 
+.cap-title  {
+  position: relative;
+  letter-spacing: 16px;
+  font-size: 5.6rem !important;
+}
+
 
 .forma1 {
   position: relative;
@@ -12984,9 +13006,9 @@ body {
 }
 
 
-.active {
+/* .active {
   color: coral !important;
-  }
+  } */
 
 .back-float {
   position: fixed;
@@ -13002,104 +13024,6 @@ body {
     z-index: 100;
     color:#ffffff
 }
-
-.back-text {
-color: #ffffff;
-font-size: 10px !important;
-letter-spacing: 0.1em !important;
-line-height: 10px !important;
-}
-
-.back-text:hover {
-  color: coral !important;
-  }
-
- @media screen and (min-width: 767) {
-    .region {
-        scroll-behavior: smooth;  
-    } 
-} 
-
-  
-/* Queries formas olas */
-@media (min-width: 1801px) {
-  .forma1 {
-    top: 140px;
-  }
-  .forma2 {
-    bottom: 106px;
-  }
-} 
-
-@media (min-width: 1441px) and (max-width: 1800px){
-  .forma1 {
-    top: 110px;
-  }
-  .forma2 {
-    bottom: 80px;
-  }
-} 
-
-@media (min-width: 1201px) and (max-width: 1440px){
-  .forma1 {
-    top: 90px;
-  }
-  .forma2 {
-    bottom: 70px;
-  }
-}  
-
-@media (min-width: 1025px) and (max-width: 1200px){
-  .forma1 {
-    top: 80px;
-  }
-  .forma2 {
-    bottom: 60px;
-  }
-}   
-
-@media (min-width: 768px) and (max-width: 1024px){
-  .forma1 {
-    top: 60px;
-  }
-  .forma2 {
-    bottom: 44px;
-  }
-}   
-
-@media (min-width: 481px) and (max-width: 767px){
-  .forma1 {
-    top: 50px;
-  }
-  .forma2 {
-    bottom: 30px;
-  }
-}   
-
-@media (min-width: 320px) and (max-width: 480px){
-  .forma1 {
-    top: 30px;
-  }
-  .forma2 {
-    bottom: 20px;
-  }
-}   
-
-
-
-
-
-/* 
-@media (max-width: 576px){
-  .chapter-container {
-   width: 200px;
-  }
-}    */
-
-
-
-
-
 
 .arrow_scroll {
   animation: fadeOutDown 1s linear infinite;
@@ -13118,7 +13042,24 @@ line-height: 10px !important;
   }
 }
 
+.back-text {
+color: #ffffff;
+font-size: 10px !important;
+letter-spacing: 0.1em !important;
+line-height: 10px !important;
+}
 
+.back-text:hover {
+  color: coral !important;
+  }
+
+
+/* 
+@media (max-width: 576px){
+  .chapter-container {
+   width: 200px;
+  }
+}    */
 
 
 
@@ -13194,26 +13135,30 @@ font-size: 1.1rem;
   padding: 0 auto;
  }
 
-.menu-cap {
+ .min_map_subtitle {
+  font-size: 26px;
   font-weight: 400 !important;
-  font-size: 18px;
+ }
+
+ .wsp-btn-text {
+  font-size: 20px;
+ }
+
+ .menu-cap {
+  font-weight: 400 !important;
+  font-size: 30px;
   letter-spacing: 1px;
  } 
 
- .min_map_subtitle {
-  font-size: 28px;
- }
-
-/* #c3 {
-  text-decoration: none;
-} */
+ .menu-link, .menu-cap, .submenu-text  {
+ letter-spacing: 1.2px;
+} 
 
  .submenu-text {
  text-align: left !important; 
   font-weight: 300 !important;
-  font-size: 14px;
+  font-size: 22px;
   cursor: pointer;
-  letter-spacing: 1px;
  } 
 
   .btn .submenu-text{
@@ -13228,6 +13173,16 @@ font-size: 1.1rem;
   color: coral !important;
 }
 
+.show-cap {
+  font-size: 22px;
+  transition:all 0.5s !important;
+}
+
+.show-cap:hover {
+  font-size: 24px;
+  transition:all 0.5s !important;
+}
+
 .min_map_title {
   font-weight: 300 !important;
   font-size: 55px;
@@ -13237,7 +13192,7 @@ font-size: 1.1rem;
  
   .menu-link {
     color: white;
-    font-size: 14px;
+    font-size: 28px;
     font-weight: 400 !important;
     transition:all 0.5s !important;
   }
@@ -13248,7 +13203,7 @@ font-size: 1.1rem;
  
 .min_map_subtitle{
    font-weight: 200 !important;
-   font-size: 38px ;
+   font-size: 38px;
    letter-spacing: 10px;
    text-align: left;
    color: white;
@@ -13307,8 +13262,23 @@ font-size: 1.1rem;
        font-size: 16px !important;
        letter-spacing: 6px !important;
        } 
-  } 
+/* 
+    .cap-title  {
+      letter-spacing: 10px;
+      font-size: 3rem !important;
+    }
+  }  */
   
+
+  
+  @media screen and (max-width: 1150px) {
+    .cap-title {
+      font-size: 40px !important;
+      letter-spacing: 10px !important;
+      } 
+    }
+
+
 
 
 
@@ -13396,3 +13366,107 @@ a:any-link{
   text-decoration: none !important;
 }
 
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 767) {
+  .region {
+      scroll-behavior: smooth;  
+  } 
+} 
+
+/* Queries formas olas */
+@media (min-width: 1801px) {
+.forma1 {
+  top: 140px;
+}
+.forma2 {
+  bottom: 106px;
+}
+} 
+
+@media (min-width: 1441px) and (max-width: 1800px){
+.forma1 {
+  top: 110px;
+}
+.forma2 {
+  bottom: 80px;
+}
+} 
+
+@media (min-width: 1201px) and (max-width: 1440px){
+.forma1 {
+  top: 90px;
+}
+.forma2 {
+  bottom: 70px;
+}
+}  
+
+@media (min-width: 1025px) and (max-width: 1200px){
+.forma1 {
+  top: 80px;
+}
+.forma2 {
+  bottom: 60px;
+}
+}   
+
+@media (min-width: 768px) and (max-width: 1024px){
+.forma1 {
+  top: 60px;
+}
+.forma2 {
+  bottom: 44px;
+}
+}   
+
+@media (min-width: 481px) and (max-width: 767px){
+.forma1 {
+  top: 50px;
+}
+.forma2 {
+  bottom: 30px;
+}
+}   
+
+@media (min-width: 320px) and (max-width: 480px){
+.forma1 {
+  top: 30px;
+}
+.forma2 {
+  bottom: 20px;
+}
+}   
+
+/* Queries Nuestro Proyecto */
+@media (max-width: 991px) {
+  .titulo-header-proyecto {
+    font-size: 4rem;
+    line-height: 1.1em;
+  } 
+  .titulo-proyecto, .titulo-fef {
+    line-height: 1.1em;
+    font-size: 2.3rem;
+  }
+
+  .titulo-fef {
+    font-size: 1.8rem;
+  }
+
+
+
+
+} 
+
+/* @media (min-width: 765px) and (max-width: 991px) {
+  .titulo-header-proyecto {
+    line-height: 1.1em;
+ */
+
+
+
+  /* } 
+}  */

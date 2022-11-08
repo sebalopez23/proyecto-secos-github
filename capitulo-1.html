@@ -696,21 +696,6 @@
       </div>
     </div>
 
-    <div class="news-slider__ctr">
-      <div class="news-slider__arrows">
-        <button class="news-slider__arrow news-slider-prev">
-          <span class="icon-font">
-            <img src="assets/img/icons/flecha-izquierda.png" width="26px" class="m-0">
-          </span>
-        </button>
-        <button class="news-slider__arrow news-slider-next">
-          <span class="icon-font">
-            <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
-          </span>
-        </button>
-      </div>
-      <div class="news-slider__pagination"></div>
-    </div>
   </div>
 
 
@@ -1392,8 +1377,8 @@ swiper.on('slideChangeTransitionEnd', function () {
 
     $('.item-bg').addClass('active');
 
-    bg.style.width = width + 'px';
-    bg.style.height = height + 'px';
+    // bg.style.width = width + 'px';
+    // bg.style.height = height + 'px';
     bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
 });
 </script>

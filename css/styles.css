@@ -378,16 +378,16 @@ sup {
 }
 
 a {
-  color: #f4623a;
+  color: #ffffff;
   text-decoration: none !important;
 }
 
 a:hover {
   color: #fc8870 !important;
 }
-a:active {
+/* a:active {
   color: #fc8870 !important;
-}
+} */
 
 
 a:not([href]):not([class]),
@@ -12891,12 +12891,10 @@ header.masthead-2 .h1 {
   text-align: left !important;
   font-family: 'Prompt';
   font-style: normal;
-  /* font-weight: bolder; */
-  font-size: 100px;
-  /* or 100% */
+  font-size: 4rem !important;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  line-height: 52px;
+  line-height: 60px;
 
   color: #FFFFFF;
 }
@@ -12906,16 +12904,15 @@ header.masthead-2 .h1 {
   font-style: normal;
   font-weight: 300 !important;
   font-size: 15px;
-  line-height: 26px;
+  line-height: 27px;
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
+  letter-spacing:3%;
   color: #FFFFFF;
   text-align: left;
 
 }
 .titulo-proyecto {
-/*  position: absolute;*/
     position: relative;
     text-align: left;
     width: 50rem;
@@ -12923,10 +12920,10 @@ header.masthead-2 .h1 {
     top: 30px;
     font-family: 'Prompt';
     font-style: normal;
-    font-weight: 300;
-    font-size: 54px;
-    line-height: 48px;
-    letter-spacing: 0.03em;
+    font-weight: 200 !important;
+    font-size: 3.120rem;
+    line-height: 50px;
+    letter-spacing: 3%;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -12947,13 +12944,6 @@ li.spotify-icon {
 
 li.spotify-icon:hover {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-
-
-.titulo-fef {
-  text-align: left;
-  line-height: 2.5rem;
 }
 
 .font-weight-bold {
@@ -12990,11 +12980,11 @@ body {
 
 .cap-title  {
   position: relative;
-  letter-spacing: 16px;
+  left: 5px;
+  letter-spacing: 14px;
   font-size: 5.6rem !important;
 }
-
-
+ 
 .forma1 {
   position: relative;
   top:140px;
@@ -13004,26 +12994,57 @@ body {
   position: relative;
   bottom: 100px;
 }
+ /* .active {
+  color:#fc8870 !important;
+  }  */
 
 
-/* .active {
-  color: coral !important;
+  /* .btn-back {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    transition: transform .2s
+  }
+  .btn-back:hover {
+    background-color: #F27961 !important;
+    transition: transform .2s
   } */
 
-.back-float {
+
+  .back-float {
   position: fixed;
-    /* width: 30px;
-    height: 30px; */
-    bottom: 6rem;
-    left:9rem;
-    background-color: rgba(0, 0, 0, 0.0);
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: none;
-    z-index: 100;
-    color:#ffffff
+  bottom: 6rem;
+  left:9rem;
+  width: 60px;
+  height: 60px; 
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  box-shadow: 2px 2px 3px #02020252;
+  ;
 }
+
+/* .btn-back {
+  text-align: center;
+  font-size: 30px;
+  box-shadow: none;
+  z-index: 100;
+  color:#ffffff;
+  transition: transform .2s
+} */
+.back-float:hover {
+  background-color: #F27961 !important;
+  transition: transform .2s
+}
+
+ .back-text {
+  color: #ffffff;
+  font-size: 10px !important;
+  letter-spacing: 0.1em !important;
+  line-height: 10px !important;
+  } 
+
+  /* .back-text:hover {
+    color: #fc8870 !important;
+    } */
 
 .arrow_scroll {
   animation: fadeOutDown 1s linear infinite;
@@ -13041,27 +13062,6 @@ body {
     transform: translateY(100px);
   }
 }
-
-.back-text {
-color: #ffffff;
-font-size: 10px !important;
-letter-spacing: 0.1em !important;
-line-height: 10px !important;
-}
-
-.back-text:hover {
-  color: coral !important;
-  }
-
-
-/* 
-@media (max-width: 576px){
-  .chapter-container {
-   width: 200px;
-  }
-}    */
-
-
 
 /* textos prompt  */
 .text-white-p, .texto-audio, .intro-home, .cuñas-home, .wsp-text {
@@ -13122,7 +13122,7 @@ font-size: 1.1rem;
   color:#ffffff;
 }
 .caja:hover {
- color: coral !important;
+ color: #fc8870 !important;
  }
 
 
@@ -13133,11 +13133,6 @@ font-size: 1.1rem;
  .page-section {
   margin: 0 auto;
   padding: 0 auto;
- }
-
- .min_map_subtitle {
-  font-size: 26px;
-  font-weight: 400 !important;
  }
 
  .wsp-btn-text {
@@ -13166,11 +13161,11 @@ font-size: 1.1rem;
   color: #fff;
  } 
  .btn .submenu-text:hover{
-  color: coral;
+  color: #fc8870;
     transition:all 0.5s;
  } 
  .btn .submenu-text:active {
-  color: coral !important;
+  color: #fc8870 !important;
 }
 
 .show-cap {
@@ -13197,12 +13192,12 @@ font-size: 1.1rem;
     transition:all 0.5s !important;
   }
   .menu-link:hover {
-    color: coral !important;
+    color: #fc8870 !important;
     transition:all 0.5s !important;
   }
  
-.min_map_subtitle{
-   font-weight: 200 !important;
+.min_map_subtitle {
+   font-weight: 300 !important;
    font-size: 38px;
    letter-spacing: 10px;
    text-align: left;
@@ -13210,7 +13205,7 @@ font-size: 1.1rem;
    transition:all 0.5s !important;
    } 
    .min_map_subtitle:hover {
-    color: coral !important;
+    color: #fc8870 !important;
     transition:all 0.5s !important;
   }
 
@@ -13219,6 +13214,15 @@ font-size: 1.1rem;
       letter-spacing: 6px;
       text-align: left;
   } 
+
+  
+.titulo-fef {
+  font-size: 2.2rem;
+  font-weight: 400 !important;
+  text-align: left;
+  line-height: 2.1rem;
+  letter-spacing: 3%;
+}
 
   .chapter-container {
     padding: 20px;
@@ -13249,37 +13253,6 @@ font-size: 1.1rem;
     font-size: 20px;
     letter-spacing: 8px;
   }
-
-
-
-  @media screen and (max-width: 1150px) {
-    .min_map_title {
-      font-size: 26px !important;
-      letter-spacing: 10px !important;
-      } 
-     
-    .min_map_subtitle {
-       font-size: 16px !important;
-       letter-spacing: 6px !important;
-       } 
-/* 
-    .cap-title  {
-      letter-spacing: 10px;
-      font-size: 3rem !important;
-    }
-  }  */
-  
-
-  
-  @media screen and (max-width: 1150px) {
-    .cap-title {
-      font-size: 40px !important;
-      letter-spacing: 10px !important;
-      } 
-    }
-
-
-
 
 
 /* END Optional styles */
@@ -13447,19 +13420,72 @@ a:any-link{
     font-size: 4rem;
     line-height: 1.1em;
   } 
-  .titulo-proyecto, .titulo-fef {
+  .titulo-proyecto {
     line-height: 1.1em;
     font-size: 2.3rem;
   }
-
   .titulo-fef {
     font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+} 
+
+
+/* Queries Capítulos */
+@media screen and (max-width: 1150px) {
+  .cap-title {
+    font-size: 4rem !important;
+    letter-spacing: 10px !important;
+    } 
   }
 
+  @media screen and (max-width: 766px) {
+    .cap-title {
+      font-size: 3rem !important;
+      letter-spacing: 10px !important;
+      } 
+    }
 
 
 
-} 
+
+/* Queries Mapas Home */
+  @media screen and (max-width: 1150px) {
+    .min_map_title {
+      font-size: 26px !important;
+      letter-spacing: 10px !important;
+      } 
+     
+    .min_map_subtitle {
+       font-size: 16px !important;
+       letter-spacing: 6px !important;
+       } 
+      }
+
+  @media (max-width: 576px){
+    .chapter-container {
+    width: 300px;
+    }
+    /* .mapa-chile .zona2 {
+      justify-content: left;
+    } */
+  .zona-container {
+    justify-content: center;
+  }
+  /* .min_map_title {
+    font-size: 24px !important;
+    letter-spacing: 8px !important;
+    } 
+    .min_map_subtitle {
+      font-size: 12px !important;
+      letter-spacing: 5px !important;
+      } 
+      .min-subt {
+        font-size: 10px !important;
+        }  */
+     }
+  
+
 
 /* @media (min-width: 765px) and (max-width: 991px) {
   .titulo-header-proyecto {

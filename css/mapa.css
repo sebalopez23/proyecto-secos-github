@@ -10,7 +10,7 @@
 /* 
 .coquimbo:hover,
 .lagos:hover {
-    fill: coral;
+    fill: #fc8870;
     cursor: pointer;
 } */
 
@@ -21,7 +21,7 @@
 
 .valpo:hover
  {
-    fill: coral;
+    fill: #fc8870;
     cursor: pointer;
 }
 

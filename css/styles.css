@@ -12912,10 +12912,14 @@ header.masthead-2 .h1 {
   text-align: left;
 
 }
-.titulo-proyecto {
+
+ .p-width {
+  width: 65% !important;
+ }
+
+.titulo-proyecto, .titulo-reproductor {
     position: relative;
     text-align: left;
-    width: 50rem;
     left: 20px;
     top: 30px;
     font-family: 'Prompt';
@@ -12927,6 +12931,13 @@ header.masthead-2 .h1 {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+.titulo-reproductor {
+  font-size: 40px;
+  font-weight: 300 !important;
+  letter-spacing: 8px;
+  line-height: 18 px !important;
+}
+
 
 .parrafos-proyecto {
   font-family: 'Prompt';
@@ -12981,10 +12992,10 @@ body {
 .cap-title  {
   position: relative;
   left: 5px;
-  letter-spacing: 14px;
+  /* letter-spacing: 14px; */
   font-size: 5.6rem !important;
 }
- 
+
 .forma1 {
   position: relative;
   top:140px;
@@ -13245,7 +13256,7 @@ font-size: 1.1rem;
     font-weight: 300 !important;
     font-size: 40px;
     letter-spacing: 8px;
-    line-height:18px !important;
+    line-height: 1rem !important; 
   }
 
   .p-subtitle {
@@ -13430,24 +13441,79 @@ a:any-link{
   }
 } 
 
+@media screen and (max-width: 1150px) {
+.titulo-header-proyecto {
+  font-size: 3.2rem !important;
+  line-height: 3rem;
+}
+}
 
 /* Queries Capítulos */
-@media screen and (max-width: 1150px) {
+@media (min-width:768px) and (max-width: 1150px) {
   .cap-title {
     font-size: 4rem !important;
     letter-spacing: 10px !important;
     } 
+    .p-title {
+      line-height: 2.1rem !important;
+    }
   }
 
-  @media screen and (max-width: 766px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     .cap-title {
-      font-size: 3rem !important;
+      font-size: 3.2rem !important;
       letter-spacing: 10px !important;
       } 
+      .cap-sect-title  {
+        font-size: 2.8rem !important;
+        letter-spacing: 10px !important;
+        } 
+        .titulo-reproductor {
+          font-size: 2.3rem !important; 
+        }
+        .p-title {
+          font-size: 2.3rem !important; 
+          line-height: 35px !important;
+          top: 80px !important;
+        }
+        .p-subtitle {
+          font-size: 1.1rem !important; 
+        }
+      .p-width {
+        width: 90% !important;
+       }
+       .cap2-title {
+        font-size: 3rem !important;
+      }
     }
 
-
-
+    @media (max-width: 480px) {
+      .cap-title {
+        font-size: 3.4rem !important;
+        letter-spacing: 10px !important;
+        }  
+      .cap-sect-title  {
+          font-size: 2.3rem !important; 
+      }
+      .titulo-reproductor {
+        font-size: 2rem !important; 
+      }
+      .p-title {
+        font-size: 2rem !important; 
+        line-height: 30px !important;
+        top: 87px !important;
+      }
+      .p-subtitle {
+        font-size: 1rem !important; 
+        line-height: 45px !important;
+      }
+      .cap2-title {
+        font-size: 2rem !important;
+      }
+      .p-width {
+        width: 90% !important;
+       }
+    }
 
 /* Queries Mapas Home */
   @media screen and (max-width: 1150px) {

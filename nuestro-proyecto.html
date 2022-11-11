@@ -414,14 +414,6 @@
             <div class="small text-center text-white">Sitio desarrollado por <a class="text-white"href="https://fef.cl/" target="_blank">FEF</a></div>
         </div>
     </footer>
-
-    <script>
-        $('a.active-text').click(function(){
-            $('a.submenu-text').removeClass("active");
-            $(this).addClass("active");
-        });
-        </script>
-
         
     <script src="https://kit.fontawesome.com/4af0450260.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -443,6 +435,12 @@
                 x.style.display = "none";
             }
         }
+    </script>
+    <script>
+        $('a.active-text').click(function(){
+            $('a.submenu-text').removeClass("active");
+            $(this).addClass("active");
+        });
     </script>
 </body>
 

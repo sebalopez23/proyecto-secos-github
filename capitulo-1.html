@@ -667,6 +667,16 @@
     <script src="js/menu-vertical.js"></script>
     <script src="js/scripts.js"></script>
     <script>
+        function myFunction() {
+            var x = document.getElementById("c3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
       $('a.active-text').click(function(){
           $('a.submenu-text').removeClass("active");
           $(this).addClass("active");

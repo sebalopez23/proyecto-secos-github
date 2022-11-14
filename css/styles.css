@@ -12780,10 +12780,6 @@ header.masthead-2 .h1 {
   background-color: transparent;
 }
 
-.menu-bar {
-/* background-color: #3f52b7; */
-}
-
 .menu-area-bt {
   position: absolute;
   left: 0;
@@ -12860,6 +12856,10 @@ header.masthead-2 .h1 {
   color: #FFFFFF;
 }
 
+.home-title {
+font-size: 2.6rem;
+letter-spacing: 6px;
+}
 
 /* problemáticas -titulos secciones capitulos*/
 .cap-sect-title {
@@ -12892,10 +12892,9 @@ header.masthead-2 .h1 {
   font-family: 'Prompt';
   font-style: normal;
   font-size: 4rem !important;
-  letter-spacing: 0.03em;
+  letter-spacing: 5px;
   text-transform: uppercase;
   line-height: 60px;
-
   color: #FFFFFF;
 }
 
@@ -12926,7 +12925,7 @@ header.masthead-2 .h1 {
     font-style: normal;
     font-weight: 200 !important;
     font-size: 3.120rem;
-    line-height: 50px;
+    line-height: 52px;
     letter-spacing: 3%;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -12935,7 +12934,7 @@ header.masthead-2 .h1 {
   font-size: 40px;
   font-weight: 300 !important;
   letter-spacing: 8px;
-  line-height: 18 px !important;
+  line-height: 18px !important;
 }
 
 
@@ -12992,7 +12991,7 @@ body {
 .cap-title  {
   position: relative;
   left: 5px;
-  /* letter-spacing: 14px; */
+  letter-spacing: 18px;
   font-size: 5.6rem !important;
 }
 
@@ -13231,7 +13230,7 @@ font-size: 1.1rem;
   font-size: 2.2rem;
   font-weight: 400 !important;
   text-align: left;
-  line-height: 2.1rem;
+  line-height: 2.4rem;
   letter-spacing: 3%;
 }
 
@@ -13239,29 +13238,28 @@ font-size: 1.1rem;
     padding: 20px;
   }
 
-  .p-intro-title {
-    position: relative;
-    top: 22px;
-    left: 30px;
-    font-weight: 300 !important;
-  }
-
   .podcast-title {
     position: relative;
-    top: 56px;
+    top: 68px;
     left: 30px;
   }
 
   .p-title {
     font-weight: 300 !important;
-    font-size: 40px;
+    font-size: 2.5rem !important; 
     letter-spacing: 8px;
     line-height: 1rem !important; 
   }
 
+  .p-intro-title {
+    position:relative;
+    top: 16px;
+    left: 30px;
+  }
+
   .p-subtitle {
     font-weight: 200 !important;
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 8px;
   }
 
@@ -13355,11 +13353,22 @@ a:any-link{
 
 /* Media Queries */
 
-@media screen and (min-width: 767) {
+/* Queries Home */
+@media (max-width: 767px) {
   .region {
       scroll-behavior: smooth;  
   } 
+  .home-title {
+    font-size: 1rem !important;  
+    letter-spacing: 4px !important;
+ } 
+ .wsp-btn {
+  width: 280px !important;  
+  height:auto !important;
 } 
+
+} 
+
 
 /* Queries formas olas */
 @media (min-width: 1801px) {
@@ -13409,7 +13418,7 @@ a:any-link{
 
 @media (min-width: 481px) and (max-width: 767px){
 .forma1 {
-  top: 50px;
+  top: 42px;
 }
 .forma2 {
   bottom: 30px;
@@ -13460,24 +13469,29 @@ a:any-link{
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
+
+    /* .row-title {
+      justify-content:  !important;
+    } */
     .cap-title {
-      font-size: 3.2rem !important;
+      font-size: 3.4rem !important;
       letter-spacing: 10px !important;
       } 
+      .p-intro-title {
+       top: 16px !important; 
+      }
       .cap-sect-title  {
         font-size: 2.8rem !important;
-        letter-spacing: 10px !important;
+        letter-spacing: 8px !important;
+        line-height: 45px
         } 
-        .titulo-reproductor {
-          font-size: 2.3rem !important; 
-        }
         .p-title {
-          font-size: 2.3rem !important; 
-          line-height: 35px !important;
+          font-size: 2rem !important; 
+          line-height: auto !important;
           top: 80px !important;
         }
         .p-subtitle {
-          font-size: 1.1rem !important; 
+          font-size: 1rem !important; 
         }
       .p-width {
         width: 90% !important;
@@ -13485,35 +13499,62 @@ a:any-link{
        .cap2-title {
         font-size: 3rem !important;
       }
+      
     }
 
     @media (max-width: 480px) {
       .cap-title {
-        font-size: 3.4rem !important;
+        font-size: 3.2rem !important;
         letter-spacing: 10px !important;
         }  
       .cap-sect-title  {
-          font-size: 2.3rem !important; 
-      }
-      .titulo-reproductor {
-        font-size: 2rem !important; 
-      }
+          font-size: 1.9rem !important;
+          line-height: 34px;
+      }   
+      .podcast-title  {
+       top: 76px; 
+       left: 6px;
+    }
       .p-title {
-        font-size: 2rem !important; 
+        font-size: 1.5rem !important; 
         line-height: 30px !important;
-        top: 87px !important;
+        top: 76px !important;
+        letter-spacing: 6px !important;
+      }
+      .p-intro-title {
+       top: 20px !important;
+       left: 6px !important;
+       line-height: 30px !important;
+       letter-spacing: 6px !important;
+      }
+      .vision-p-title {
+        position: relative !important;
+        top: 10px !important;
+        left: 6px !important;
       }
       .p-subtitle {
-        font-size: 1rem !important; 
-        line-height: 45px !important;
+        font-size: 0.8rem !important; 
+        line-height: auto !important;
+        letter-spacing: 5px;
       }
       .cap2-title {
-        font-size: 2rem !important;
+        font-size: 1.6rem !important;
       }
       .p-width {
         width: 90% !important;
        }
     }
+
+
+    @media (min-width: 768px) and (max-width: 1150px) {
+      .podcast-title  {
+        top: 75px; 
+     }
+    }
+
+
+
+
 
 /* Queries Mapas Home */
   @media screen and (max-width: 1150px) {
@@ -13538,6 +13579,7 @@ a:any-link{
   .zona-container {
     justify-content: center;
   }
+
   /* .min_map_title {
     font-size: 24px !important;
     letter-spacing: 8px !important;

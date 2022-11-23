@@ -8059,6 +8059,14 @@ fieldset:disabled .btn {
   height: 90% !important
 }
 
+.h-80 {
+  height: 80% !important
+}
+
+.h-70 {
+  height: 70% !important
+}
+
 .h-auto {
   height: auto !important;
 }
@@ -12637,11 +12645,13 @@ header.masthead-2 .h1 {
 
 @media (min-width: 992px) {
   header.masthead-2 {
-    height: 100vh;
+    height: 98vh;
     min-height: 40rem;
-    padding-top: 4.5rem;
+    padding-top: 9rem;
+    /* padding-top: 10rem; */
     padding-bottom: 0;
   }
+  
 
   header.masthead-2 p {
     font-size: 1.15rem;
@@ -12658,8 +12668,17 @@ header.masthead-2 .h1 {
   header.masthead-2 h1,
   header.masthead-2 .h1 {
     font-size: 3.5rem;
+    padding-top: 9rem;
   }
 }
+
+@media (min-width: 1441px) {
+
+  header.masthead-2 {
+    padding-top: 12rem !important;
+  }
+}
+
 
 #portfolio .container-fluid,
 #portfolio .container-sm,
@@ -12858,7 +12877,7 @@ header.masthead-2 .h1 {
 
 .home-title {
 font-size: 2.6rem;
-letter-spacing: 6px;
+letter-spacing: 0.5rem;
 }
 
 /* problemáticas -titulos secciones capitulos*/
@@ -13470,9 +13489,7 @@ a:any-link{
 
   @media (min-width: 481px) and (max-width: 767px) {
 
-    /* .row-title {
-      justify-content:  !important;
-    } */
+   
     .cap-title {
       font-size: 3.4rem !important;
       letter-spacing: 10px !important;
